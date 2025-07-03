@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>my friend list</title>
+  <script src="https://kit.fontawesome.com/2913f163e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+  <div class="logo">My Friend</div>
+  <ul class="navber">
+<li class="hover-me"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+<li><a href="#">
+ 
+  
+  <i class="fa-solid fa-address-card"></i>About</a></li>
+<li><a href="#"><i class="fa-solid fa-users"></i>Friend List</a>
+<div class="sub-menu">
+  <ul>
+    <li><a href="#">Md Rifat </a></li>
+    <li><a href="#">Md Shakib</a></li>
+    <li><a href="#">Md Monir</a></li>
+    <li><a href="#">Md Ridoy</a></li>
+    <li><a href="#">Md Lemon</a></li>
+    <li><a href="#">Md Siwam</a></li>
+    <li><a href="#">Md Mithun</a></li>
+  </ul>
+</div>
+
+</li>
+<li><a href="#"><i class="fa-solid fa-taxi"></i>services</a></li>
+<li><a href="#"><i class="fa-solid fa-address-book"></i>Contact</a>
+  <div class="sub-menu">
+    <ul>
+      <li><a href="#">01737557311</a></li>
+      <li><a href="#">01926018868</a></li>
+      <li><a href="#">01928607701</a></li>
+      <li><a href="#">01322267392</a></li>
+  
+    </ul>
+  </div>
+</li>
+
+  </ul>
+  <div class="risponsive">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </nav>
+  <script>
+    const risponsive = document.querySelector(".risponsive")
+    const navber = document.querySelector(".navber")
+
+
+    risponsive.addEventListener("click",()=> {
+      navber.classList.toggle("open");
+    })
+  </script>
+</body>
+</html>

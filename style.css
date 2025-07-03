@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg,#6e45e2,#88d3ce);
+    color: white;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Montserrat',sans-serif;
+}
+.navber{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.navber li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, trasform 0.3s ease;
+}
+.navber li a:hover{
+    background-color: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+.sub-menu{
+    display: none;
+}
+nav ul li:hover .sub-menu{
+    display:block;
+    position: absolute;
+    background: rgb(79, 72, 72);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+} 
+nav ul li:hover .sub-menu ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    text-align: left;
+}
+nav ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.sub-menu ul li a{
+    text-decoration: none;
+}
+
+.navber i{
+    padding: 5px;
+    color: #ffffff;
+}
+
+
